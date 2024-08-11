@@ -5,7 +5,7 @@ import { AddIcon, SortIcon } from "src/assets/icons";
 import { SearchForm } from "src/components";
 import { Sort } from "src/components/sort";
 import { CardCustomer } from "./component/card-customer";
-import { useRouteNavigator } from "src/@hooks";
+import { useRouteNavigator } from "src/hooks";
 
 export const CustomerScreen: React.FC = () => {
   const nav = useRouteNavigator()

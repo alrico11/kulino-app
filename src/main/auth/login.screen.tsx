@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { KeyboardAvoidingView, Platform, Text, View } from "react-native";
+import { useRouteNavigator } from "src/hooks";
 import { IconBumdes } from "src/assets/icons";
 import CustomButton from "src/components/custom-button/custom-button";
 import { TextInputs } from "src/components/text-input/text-input";
-import { useRouteNavigator } from "src/hooks";
 
 export const LoginScreen: React.FC = () => {
   const [email, setEmail] = useState("");

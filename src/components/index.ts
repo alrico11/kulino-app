@@ -1,7 +1,0 @@
-export * from './custom-button'
-export * from './header'
-export * from './tab-label'
-export * from './header-custom'
-export * from './search'
-export * from './search'
-export * from './text-hightlight'

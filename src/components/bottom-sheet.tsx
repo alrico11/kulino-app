@@ -4,6 +4,7 @@ import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view
 import { useRouteNavigator } from "src/hooks";
 import CustomButton from "./custom-button";
 import { TextInputs } from "./text-inputs";
+import { TextInputPassword } from "./text-inputs-password";
 
 const InputLabel: React.FC<{ label: string; required?: boolean }> = ({ label, required }) => (
   <View style={{ flexDirection: 'row', paddingBottom: 4 }}>
@@ -49,16 +50,19 @@ export const BottomSheet: React.FC = () => {
             <Image source={require('src/assets/images/vector.jpg')} />
           </View>
           <View>
-            <View>
+
+            <View style={{paddingBottom:20}}>
               <InputLabel required label={'Nama Pengguna'} />
               <TextInputs placeholder="Masukkan nama pengguna" />
             </View>
+
             <View>
               <InputLabel required label={'Kata Sandi'} />
               <View>
-                <TextInputs secureTextEntry={true} placeholder="Masukkan kata sandi" />
-              </View>
-              <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+                <TextInputPassword placeholder="Masukkan kata sandi" />
+            </View>
+
+              <View style={{ flexDirection: 'row', justifyContent: 'space-between', paddingTop:20 }}>
                 <Text>Ingatkan saya</Text>
                 <Text>Lupa Kata Sandi?</Text>
               </View>
@@ -74,6 +78,7 @@ export const BottomSheet: React.FC = () => {
               </View>
               <Image source={require('src/assets/icons/UDINUS.png')} />
             </View>
+
           </View>
         </KeyboardAwareScrollView>
       </KeyboardAvoidingView>

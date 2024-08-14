@@ -10,17 +10,12 @@ interface ITextInput {
 
 export const TextInputs: React.FC<ITextInput> = ({ placeholder, secureTextEntry, isTextBox, numberOnly}) => {
   return (
-    <View>
+    <View style={{borderBlockStartColor: '#F0F5FA',borderRadius: 8,backgroundColor: 'rgba(5, 123, 159, 0.1)',borderColor: '#82A7D0',height:46,borderWidth:1}}>
       <TextInput
         style={{
-          height: 50,
           fontSize: 14,
           lineHeight: 16.94,
-          borderBlockStartColor: '#F0F5FA',
-          borderRadius: 8,
-          backgroundColor: 'rgba(5, 123, 159, 0.1)',
-          borderColor: '#82A7D0',
-          borderWidth: 1,
+          borderRadius:8,
           marginBottom: 12,
           padding: 15,
         }}
